@@ -1,0 +1,239 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+body {
+  font-family: 'Josefin Sans';
+  background-color: #FFFAFB;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.right-arrow,
+.left-arrow {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FF2625;
+  font-size: 25px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -20px;
+  right: 80px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.right-arrow {
+  right: 140px;
+}
+
+.right-arrow:hover,
+.left-arrow:hover {
+  transform: scale(1.3, 1.3);
+}
+
+
+.detail-image {
+  width: 729px;
+  height: 742px;
+}
+
+.hero-banner-img {
+  position: absolute;
+  right: 40px;
+  top: 0px;
+  width: 700px;
+  height: 900px;
+  margin-top: -330px;
+
+}
+
+.exercise-card {
+  width: 400px;
+  height: 445px;
+  background: #fff;
+  border-top: 4px solid #FF2625;
+  border-bottom-left-radius: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 10px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.exercise-card img {
+  height: 326px;
+}
+
+.bodyPart-card {
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.exercise-card:hover,
+.bodyPart-card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.search-btn:hover {
+  color: #FF2625 !important;
+  border: 1px solid #FF2625 !important;
+}
+
+.exercise-video {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 387px;
+  height: 381px;
+  text-decoration: none;
+}
+
+@media screen and (max-width:1200px) {
+  .detail-image {
+    width: 300px;
+    height: 300px;
+  }
+
+
+  .react-horizontal-scrolling-menu--scroll-container {
+    width: 500px;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    position: static !important;
+  }
+
+  .hero-banner-img {
+    display: none;
+  }
+
+  .exercise-card {
+    width: 320px;
+    
+      /* filter: none !important;
+      display: none; */
+    
+  }
+
+  .exercise-video {
+    width: 200px;
+    height: 280px;
+  }
+
+}
+
+@media screen and (max-width:400px) {
+  .exercise-card {
+    width: 280px;
+  }
+}
+.react-horizontal-scrolling-menu--wrapper {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+
+.react-horizontal-scrolling-menu--wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.box-item {
+    display: inline-block;
+    margin: 0 20px;
+}
+/* For horizontal layout */
+.react-horizontal-scrolling-menu--scroll-container {
+  display: flex;
+  flex-direction: row;  /* 👈 Ensures horizontal layout */
+  gap: 20px;
+  padding: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+
+.react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.box-item {
+  display: inline-block;  /* 👈 Important for horizontal flow */
+  margin: 0 10px;
+}
+
+.bodyPart-card {
+  transform: scale(1, 1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.bodyPart-card:hover {
+  transform: scale(1.1, 1.1);
+  border-color: #ff2625;
+}
+.icon-button:hover{
+  transform: scale(1.1, 1.1);
+  background-color: antiquewhite;
+}
