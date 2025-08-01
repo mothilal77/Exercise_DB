@@ -7,9 +7,30 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependency directories
 node_modules
 dist
 dist-ssr
+
+# Environment and security files
+.env
+.env.*
+*.env
+*.key
+*.pem
+*.crt
+*.cert
+*.pfx
+*.p12
+*.asc
+*.gpg
+.secret
+.secrets
+*.jks
+*.keystore
+*.csr
+
+# Local config
 *.local
 
 # Editor directories and files
